@@ -1,9 +1,6 @@
 from selenium import webdriver
 import unittest
 
-if __name__ == '__main__':
-    unittest.main(warnings='ignore')
-
 class NewVisitorTest(unittest.TestCase):
     def setUp(self):
         self.browser=webdriver.Firefox()
@@ -18,7 +15,7 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.get('http://localhost:8000')
 
         #She notices the page title and header mention to-do lists
-        self.assertIn('To-Do',self.browser.title)
+        self.assertIn('To-Do',self.browser.title),"Browser title was: "+self.browser.title
         self.fail('Finish the test!')
 
         #She is invited to enter a to-do item straight away
@@ -42,3 +39,5 @@ class NewVisitorTest(unittest.TestCase):
 
         #Satisfied, she goes back to sleep
 
+if __name__ == '__main__':
+    unittest.main(warnings='ignore')
