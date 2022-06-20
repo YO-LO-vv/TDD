@@ -28,7 +28,7 @@ debugpy @ file:///C:/ci/debugpy_1637091961445/work
 decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
 defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
 diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630511840874/work
-
+Django @ file:///tmp/build/80754af9/django_1625585912945/work
 docutils @ file:///C:/ci/docutils_1620828264669/work
 entrypoints==0.3
 executing @ file:///opt/conda/conda-bld/executing_1646925071911/work

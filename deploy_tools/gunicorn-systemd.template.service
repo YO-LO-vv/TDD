@@ -5,7 +5,8 @@ Description=Gunicorn server for 47.114.116.5
 Restart=on-failure
 User=root
 WorkingDirectory=/home/zzy/47.114.116.5/source
-ExecStart=/home/zzy/47.114.116.5/virtualenv/bin/gunicorn --bind unix:/tmp/47.114.116.5.socket superlists.wsgi:application
+ExecStart=/home/zzy/47.114.116.5/virtualenv/bin/gunicorn \
+--bind unix:/tmp/47.114.116.5.socket superlists.wsgi:application
 
 [Install]
 WantedBy=multi-user.target 
