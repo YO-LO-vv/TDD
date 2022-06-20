@@ -5,7 +5,7 @@ import random
 REPO_URL = 'https://github.com/YO-LO-vv/TDD.git'
 
 def deploy():
-	site_folder = f'/home/zzy/47.114.116.5'
+	site_folder = f'/home/{env.user}/sites/47.114.116.5'
 	source_folder = site_folder + '/source'
 	_create_directory_structure_if_necessary(site_folder)
 	_get_latest_source(source_folder)
